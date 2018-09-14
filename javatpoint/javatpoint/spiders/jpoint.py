@@ -21,8 +21,8 @@ class JpointSpider(scrapy.Spider):
           
             #print(code)
             Item=CodeItem()
-            Item['Title']=title
-            Item['subtitle']=t
+            Item['Title']=title + ' - ' + t
+           
             Item['Code']= response.xpath('//div[count(preceding-sibling::h2)=' + str(count) + ']/textarea[@class="java"]/text()').extract() 
             Item['Language']=language
             Item['Description']=description

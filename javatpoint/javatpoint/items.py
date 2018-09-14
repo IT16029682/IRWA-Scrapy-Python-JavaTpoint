@@ -15,4 +15,4 @@ class CodeItem(scrapy.Item):
      Description=scrapy.Field()
      URL=scrapy.Field()
      Language=scrapy.Field()
-     subtitle = scrapy.Field()
+     #subtitle = scrapy.Field()
